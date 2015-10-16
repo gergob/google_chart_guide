@@ -3,28 +3,28 @@ google.load('visualization', '1', {'packages':['corechart', 'bar']});
 google.setOnLoadCallback(drawChart);
 
 function drawChart() {
-    $.get('/api/cities', function(response) {
+    $.get('/api/population', function(response) {
 
         console.log(response);
 
         // Create the data table.
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'City Name');
-        data.addColumn('number', 'Income');
+        data.addColumn('number', 'Year');
+        data.addColumn('number', 'Population');
 
         var chartData = [];
         for(var idx = 0; idx < response.length; ++idx) {
             var item = response[idx];
-            chartData.push([item.cityName, item.income]);
+            chartData.push([item.year, item.population]);
         }
         data.addRows(chartData);
 
         var options = {
-            title: 'Hungarian Income Spread'
+            title: 'Hungarian Population Change between 1870 and 2011'
         };
 
         //create and draw the chart from DIV
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var chart = new google.visualization.LineChart(document.getElementById('linechart'));
         chart.draw(data, options);
 
     }, 'json');

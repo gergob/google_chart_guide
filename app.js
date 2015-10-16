@@ -10,6 +10,7 @@ var index = require('./routes/index');
 var barchart = require('./routes/barchart');
 var donutchart = require('./routes/donutchart');
 var piechart = require('./routes/piechart');
+var linechart = require('./routes/linechart');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/api', api);
 app.use('/barchart', barchart);
 app.use('/donutchart', donutchart);
 app.use('/piechart', piechart);
+app.use('/linechart', linechart);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
