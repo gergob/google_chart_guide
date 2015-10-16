@@ -3,10 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {
-    title: 'Google Charts Guide',
-    selected: 'home'
-  });
+    res.render('barchart', {
+        selected: 'barchart'
+    });
 });
 
 module.exports = router;

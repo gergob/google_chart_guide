@@ -1,5 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+
+    div(class='row')
+        div(class='col-md-3')
+            div(class='thumbnail')
+                img(src='images/barchart.jpg')
+                div(class='caption text-center')
+                    a(href='/barchart' class='btn btn-primary') Bar Chart
+        div(class='col-md-3')
+            p Donut Chart
+    div(class='row')
+        div(class='col-md-3')
+            p Pie Chart
+        div(class='col-md-3')
+            p Line Chart
+    div(class='row')
+        div(class='col-md-3')
+            p Geo Chart
+        div(class='col-md-3')
+            p Gauge Chart

@@ -17,12 +17,26 @@ html
             a(class='navbar-brand' href='/') Google Charts Guide
           div(class='collapse navbar-collapse' id='navbar')
             ul(class='nav navbar-nav')
-              li(class='active')
-                a(href='#') Home
-              li()
-                a(href='/') Home 2
+              li(class='#{selected === "home" ? "active" : ""}')
+                a(href='/') Home
+              li(class='#{selected === "barchart" ? "active" : ""}')
+                a(href='/barchart') Bar Chart
+              li(class='#{selected === "donutchart" ? "active" : ""}')
+                a(href='/donutchart') Donut Chart
+              li(class='#{selected === "piechart" ? "active" : ""}')
+                a(href='/piechart') Pier Chart
+              li(class='#{selected === "linechart" ? "active" : ""}')
+                a(href='/linechart') Line Chart
+              li(class='#{selected === "geochart" ? "active" : ""}')
+                a(href='/geochart') Geo Chart
+              li(class='#{selected === "gaugechart" ? "active" : ""}')
+                a(href='/gaugechart') Gauge Chart
+
+
       div(class='container' id='content')
         block content
 
-    block sritpts
+    block scripts
+        script(src='https://www.google.com/jsapi')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
         script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
