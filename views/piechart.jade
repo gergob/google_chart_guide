@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    div(class='row')
+        div(class='col-md-7')
+            div(id='piechart' style="width: 630px; height: 600px;")
+        div(class='col-md-5 gist-code')
+
+block append scripts
+    script(src='/javascripts/piechart.js')
