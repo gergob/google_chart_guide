@@ -5,34 +5,70 @@ var router = express.Router();
 router.get('/cities', function (req, res, next) {
 
     var cityData = [
-        //{
-        //    'cityName': 'Budapest',
-        //    'population': 1741041
-        //},
         {
             'cityName': 'Debrecen',
-            'population': 204124,
+            'population': 237888,
             'income': 135430
         },
         {
             'cityName': 'Miskolc',
-            'population': 172637,
+            'population': 216470,
             'income': 151102
         },
         {
             'cityName': 'Szeged',
-            'population': 164883,
+            'population': 201307,
             'income': 141233
         },
         {
             'cityName': 'Pecs',
-            'population': 156649,
+            'population': 179215,
             'income': 138830
         },
         {
             'cityName': 'Gyor',
-            'population': 128265,
+            'population': 182776,
             'income': 145900
+        },
+        {
+            'cityName': 'Kecskemet',
+            'population': 111863,
+            'income': 178565
+        },
+        {
+            'cityName': 'Szombathely',
+            'population': 79348,
+            'income': 115900
+        },
+        {
+            'cityName': 'Szolnok',
+            'population': 74343,
+            'income': 118400
+        },
+        {
+            'cityName': 'Erd',
+            'population': 65267,
+            'income': 122000
+        },
+        {
+            'cityName': 'Szekesfehervar',
+            'population': 108958,
+            'income': 102000
+        },
+        {
+            'cityName': 'Zalaegerszeg',
+            'population': 61390,
+            'income': 112050
+        },
+        {
+            'cityName': 'Nyiregyhaza',
+            'population': 118185,
+            'income': 137855
+        },
+        {
+            'cityName': 'Szigetszentmiklos',
+            'population': 34877,
+            'income': 111542
         }
     ];
 
