@@ -127,6 +127,24 @@ router.get('/population', function (req, res, next) {
     res.json(population);
 });
 
+router.get('/gaugedata', function (req, res, next) {
 
+    var data = [
+        {
+            data: '°C',
+            value: 27.3
+        },
+        {
+            data: '°C',
+            value: 32.1
+        },
+        {
+            data: '°C',
+            value: 28.5
+        }
+    ];
+
+    res.json(data);
+});
 
 module.exports = router;

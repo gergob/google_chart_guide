@@ -10,3 +10,7 @@
 .thumbnail img {
     height: 200px;
 }
+
+.gauge-spacing {
+    margin-top: 5em;
+}
