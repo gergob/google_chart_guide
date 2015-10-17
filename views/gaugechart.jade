@@ -2,9 +2,10 @@ extends layout
 
 block content
     div(class='row')
-        div(class='col-md-7')
-            div(id='gaugechart' class='gauge-spacing' style="width: 630px; height: 600px;")
-        div(class='col-md-5 gist-code')
+        div(class='col-md-6')
+            div(id='gaugechart' class='gauge-spacing' style="width: 580px; height: 600px;")
+        div(class='col-md-6 gist-code')
+            script(src='https://gist.github.com/gergob/27ab073657772db770e2.js')
 
 block append scripts
     script(src='/javascripts/gaugechart.js')
